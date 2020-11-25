@@ -46,7 +46,7 @@ spec:
             - ./docker/web
           env:
             - name: DATABASE_URL
-              value: postgres://postgres:p4ssw0rd@db-service/openproject
+              value: postgres://postgres:p4ssw0rd@db-service:30088/openproject
             - name: IMAP_ENABLED
               value: "false"
             - name: OPENPROJECT_CACHE__MEMCACHE__SERVER

@@ -55,6 +55,8 @@ spec:
             - mountPath: /var/lib/postgresql/data
               subPath: op
               name: pgdata
+          ports:
+            - containerPort: 5432
       restartPolicy: Always
       terminationGracePeriodSeconds: 3
       volumes:
